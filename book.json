@@ -1,0 +1,27 @@
+{
+    "plugins": [
+        "-highlight",
+        "theme-comscore",
+        "tbfed-pagefooter",
+        "prism",
+        "splitter",
+        "bootstrap-callout",
+        "sectionx",
+        "todo",
+        "disqus"
+     ],
+    "pluginsConfig": {
+    	"tbfed-pagefooter": {
+  			"modify_label": "最後編輯時間：",
+  			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"prism": {
+            "css": [
+                "prismjs/themes/prism-tomorrow.css"
+            ]
+        },
+        "disqus": {
+            "shortName": "ahjiong"
+        }
+	}
+}
