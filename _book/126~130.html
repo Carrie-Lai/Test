@@ -1270,9 +1270,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="426~429.md">
+        <li class="chapter " data-level="6.6" data-path="426~430.html">
             
-                <span>
+                <a href="426~430.html">
             
                     
                     426~429
@@ -1336,12 +1336,14 @@
 <p>D.   Intercepting Filter </p>
 <p>E.   Business Delegate </p>
 <p>F.   Data Access Object</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section126_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section126_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section126_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;B</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;Front Controller&#x53EF;&#x5C07;&#x5171;&#x7528;&#x7684;&#x8ACB;&#x6C42;&#x8655;&#x7406;&#x7A0B;&#x5F0F;&#x78BC;&#x96C6;&#x4E2D;&#x7BA1;&#x7406;&#x8D77;&#x4F86;&#xFF0C;&#x589E;&#x52A0;Controller&#x5143;&#x4EF6;&#x7684;&#x5167;&#x805A;&#x529B;</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>Head First Servlets&amp;JSP ch14 &#x8A2D;&#x8A08;&#x6A21;&#x5F0F;&#x53CA;Struts(p.783)</p>
 <p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch12 &#x5F9E;&#x6A21;&#x5F0F;&#x5230;&#x6846;&#x67B6;(p.12-9~p.12-10)</p>
-<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch13 Java EE&#x8A2D;&#x8A08;&#x6A21;&#x5F0F;(p.13-4~p.13-5)</p>
+<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch13 Java EE&#x8A2D;&#x8A08;&#x6A21;&#x5F0F;(p.13-4~p.13-5)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>127.You are designing an n-tier Java EE application. You have already decided that some of your JSPs will need to get data from a Customer entity bean. You are trying to decide whether to use a Customer stub object or a Transfer Object. Which two statements are true? (Choose two.)</p>
 <p>A.   The stub will increase network traffic. </p>
@@ -1350,10 +1352,12 @@
 <p>D.   In both cases, the JSPs can use EL expressions to get data. </p>
 <p>E.   Only the Transfer Object will need to use a Business Delegate. </p>
 <p>F.   Using the stub approach allows you to design the application without using a Service Locator.</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section127_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section127_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section127_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A&#x3001;D</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;stub&#x662F;RMI&#x7684;&#x9060;&#x7AEF;&#x4EE3;&#x7406;&#x7269;&#x4EF6;&#xFF0C;&#x548C;Transfer Object&#x4E00;&#x6A23;&#x53EF;&#x4EE5;&#x7528;EL&#x53D6;&#x5F97;&#x5176;&#x8CC7;&#x6599;&#xFF0C;&#x4F46;&#x6BCF;&#x7576;JSP&#x547C;&#x53EB;getter&#xFF0C;&#x5C31;&#x6703;&#x7522;&#x751F;&#x7DB2;&#x8DEF;&#x547C;&#x53EB;&#xFF0C;&#x5C0D;&#x6548;&#x80FD;&#x9020;&#x6210;&#x5F71;&#x97FF;</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
-<p>Head First Servlets&amp;JSP ch14 &#x8A2D;&#x8A08;&#x6A21;&#x5F0F;&#x53CA;Struts(p.757~p.759)</p>
+<p>Head First Servlets&amp;JSP ch14 &#x8A2D;&#x8A08;&#x6A21;&#x5F0F;&#x53CA;Struts(p.757~p.759)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>128.You have a simple web application that has a single Front Controller servlet that dispatches to JSPs to generate a variety of views. Several of these views require further database processing to retrieve the necessary order object using the orderID request parameter. To do this additional processing, you pass the request first to a servlet that is mapped to the URL pattern /WEB-INF/retreiveOrder.do in the deployment descriptor. This servlet takes two request parameters, the orderID and the jspURL. It handles the database calls to retrieve and build the complex order objects and then it dispatches to the jspURL. </p>
 <p>Which code snippet in the Front Controller servlet dispatches the request to the order retrieval servlet?</p>
@@ -1381,8 +1385,10 @@ String url <span class="token operator">=</span> String<span class="token punctu
 Dispatcher view <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">getDispatcher</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
 view<span class="token punctuation">.</span><span class="token function">forwardRequest</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
+<sec data-title="&#x89E3;&#x6790;" data-id="section128_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section128_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section128_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;C</p>
-<p>&#x5099;&#x8A3B;&#xFF1A;A&#x3001;C&#x5169;&#x500B;&#x9078;&#x9805;&#x90FD;&#x662F;&#x5408;&#x6CD5;&#x7684;&#x5BEB;&#x6CD5;&#xFF0C;&#x4F46;&#x56E0;&#x70BA;&#x984C;&#x76EE;&#x63D0;&#x5230;&#x8AAA;&#x8981;&#x53D6;&#x5F97;orderID&#x8ACB;&#x6C42;&#x53C3;&#x6578;&#xFF0C;&#x56E0;&#x6B64;&#x9078;C</p>
+<p>&#x5099;&#x8A3B;&#xFF1A;A&#x3001;C&#x5169;&#x500B;&#x9078;&#x9805;&#x90FD;&#x662F;&#x5408;&#x6CD5;&#x7684;&#x5BEB;&#x6CD5;&#xFF0C;&#x4F46;&#x56E0;&#x70BA;&#x984C;&#x76EE;&#x63D0;&#x5230;&#x8AAA;&#x8981;&#x53D6;&#x5F97;orderID&#x8ACB;&#x6C42;&#x53C3;&#x6578;&#xFF0C;&#x56E0;&#x6B64;&#x9078;C
+</p></div></div></div></sec><p></p>
 <hr>
 <p>129.You have built a web application that you license to small businesses. The webapp uses a context parameter, called licenseExtension, which enables certain advanced features based on your client&apos;s license package. When a client pays for a specific service, you provide them with a license extension key that they insert into the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>context-param</span><span class="token punctuation">&gt;</span></span></code> of the deployment descriptor. Not every client will have this context parameter so you need to create a context listener to set up a default value in the licenseExtension parameter. Which code snippet will accomplish this goal?</p>
 <p>A.   You cannot do this because context parameters CANNOT be altered programmatically. </p>
@@ -1410,11 +1416,13 @@ view<span class="token punctuation">.</span><span class="token function">forward
     context<span class="token punctuation">.</span><span class="token function">setInitParameter</span><span class="token punctuation">(</span><span class="token string">&apos;licenseExtension&apos;</span><span class="token punctuation">,</span> DEFAULT<span class="token punctuation">)</span><span class="token punctuation">;</span> 
 <span class="token punctuation">}</span>
 </code></pre>
+<sec data-title="&#x89E3;&#x6790;" data-id="section129_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section129_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section129_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x521D;&#x59CB;&#x53C3;&#x6578;&#x7121;&#x6CD5;&#x5728;&#x57F7;&#x884C;&#x6642;&#x671F;&#x505A;&#x4FEE;&#x6539;</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>Head First Servlets&amp;JSP ch5 &#x5C6C;&#x6027;&#x53CA;&#x5075;&#x807D;&#x5668;(p.160)</p>
-<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch5 Web&#x5BB9;&#x5668;&#x6A21;&#x578B;(p.5-3)</p>
+<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch5 Web&#x5BB9;&#x5668;&#x6A21;&#x578B;(p.5-3)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>130.You have a use case in your web application that adds several session-scoped attributes.  At the end of the use case, one of these objects, the manager attribute, is removed and then it needs to decide which of the other session-scoped attributes to remove. </p>
 <p>How can this goal be accomplished?</p>
@@ -1422,14 +1430,16 @@ view<span class="token punctuation">.</span><span class="token function">forward
 <p>B.   The object of the manager attribute should implement the HttpSessionListener and it should call the removeAttribute method on the appropriate session attributes.</p>
 <p>C.   The object of the manager attribute should implement the HttpSessionBindingListener and it should call the deleteAttribute method on the appropriate session attributes. </p>
 <p>D.   The object of the manager attribute should implement the HttpSessionListener and it should call the deleteAttribute method on the appropriate session attributes.</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section130_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section130_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section130_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x984C;&#x76EE;&#x63D0;&#x5230;&#x7576;manager&#x9019;&#x500B;&#x5C6C;&#x6027;&#x88AB;&#x79FB;&#x9664;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x9700;&#x6C7A;&#x5B9A;&#x5176;&#x4ED6;&#x8981;&#x88AB;&#x79FB;&#x9664;&#x7684;Session&#x4F5C;&#x7528;&#x57DF;&#x5C6C;&#x6027;&#xFF0C;&#x8981;&#x9054;&#x5230;&#x6B64;&#x76EE;&#x7684;&#x53EF;&#x4EE5;&#x5BE6;&#x4F5C;HttpSessionBindingListener&#x4ECB;&#x9762;&#xFF0C;&#x5728;valueUnbound&#x65B9;&#x6CD5;&#x4E2D;&#x5229;&#x7528;HttpSessionBindingEvent.getSession()&#x53D6;&#x5F97;HttpSession&#x7269;&#x4EF6;&#xFF0C;&#x518D;&#x547C;&#x53EB;HttpSession&#x7684;removeAttribute&#x65B9;&#x6CD5;&#x4F86;&#x79FB;&#x9664;&#x5176;&#x4ED6;&#x5C6C;&#x6027;</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>&#x8B1B;&#x7FA9; ch12(p.212)</p>
 <p>Head First Servlets&amp;JSP ch6 Session&#x7BA1;&#x7406;(p.265)</p>
-<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch5 Servlet&#x9032;&#x968E;API&#x3001;&#x904E;&#x6FFE;&#x5668;&#x8207;&#x50BE;&#x807D;&#x5668;(p.5-20~p.5-21)</p>
+<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch5 Servlet&#x9032;&#x968E;API&#x3001;&#x904E;&#x6FFE;&#x5668;&#x8207;&#x50BE;&#x807D;&#x5668;(p.5-20~p.5-21)
+</p></div></div></div></sec><p></p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6700;&#x5F8C;&#x7DE8;&#x8F2F;&#x6642;&#x9593;&#xFF1A;
-2017-09-11 06:31:20
+2017-10-28 21:48:50
 </span></footer>
                                 
                                 </section>
@@ -1473,7 +1483,7 @@ view<span class="token punctuation">.</span><span class="token function">forward
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"126~130","level":"3.6","depth":1,"next":{"title":"131~135","level":"3.7","depth":1,"path":"131~135.md","ref":"131~135.md","articles":[]},"previous":{"title":"121~125","level":"3.5","depth":1,"path":"121~125.md","ref":"121~125.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"126~130.md","mtime":"2017-09-10T22:31:20.520Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-28T13:40:20.258Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"126~130","level":"3.6","depth":1,"next":{"title":"131~135","level":"3.7","depth":1,"path":"131~135.md","ref":"131~135.md","articles":[]},"previous":{"title":"121~125","level":"3.5","depth":1,"path":"121~125.md","ref":"121~125.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"126~130.md","mtime":"2017-10-28T13:48:50.221Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-29T04:24:29.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

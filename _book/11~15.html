@@ -1270,9 +1270,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="426~429.md">
+        <li class="chapter " data-level="6.6" data-path="426~430.html">
             
-                <span>
+                <a href="426~430.html">
             
                     
                     426~429
@@ -1335,6 +1335,7 @@
 <p>C.   A file named foo.tag, bundled in a JAR file but NOT defined in a TLD, triggers a container translation error. </p>
 <p>D.   A file named foo.tag, located in a web application&apos;s root directory, is recognized as a tag file by the container.</p>
 <p>E.   If files foo1.tag and foo2.tag both reside in /WEB-INF/tags/bar, the container will consider them part of the same tag library.</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section11_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section11_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section11_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;B&#x3001;E</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;</p>
 <ol>
@@ -1355,7 +1356,8 @@
 </li>
 </ol>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
-<p><a href="https://docs.oracle.com/cd/E19159-01/819-3669/bnalj/index.html" target="_blank">Chapter 8 Custom Tags in JSP Pages (The Java EE 5 Tutorial)</a></p>
+<p><a href="https://docs.oracle.com/cd/E19159-01/819-3669/bnalj/index.html" target="_blank">Chapter 8 Custom Tags in JSP Pages (The Java EE 5 Tutorial)</a>
+</p></div></div></div></sec><p></p>
 <hr>
 <p>12.The sl:shoppingList and sl:item tags output a shopping list to the response and are used as follows: </p>
 <pre class="language-"><code class="lang-jsp">11. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">sl:</span>shoppingList</span><span class="token punctuation">&gt;</span></span> 
@@ -1372,11 +1374,13 @@
 <p>C.   It is impossible for ItemSimpleTag and ShoppingListTag to find each other in a tag hierarchy because one is a Simple tag and the other is a Classic tag. </p>
 <p>D.   ShoppingListTag can find the child instances of ItemSimpleTag by calling getChildren() on the PageContext and casting each to an ItemSimpleTag. </p>
 <p>E.   ItemSimpleTag can find the enclosing instance of ShoppingListTag by calling findAncestorWithClass() on the PageContext and casting the result to ShoppingListTag.</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section12_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section12_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section12_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x5728;Tag&#x4ECB;&#x9762;&#x53CA;SimpleTag&#x4ECB;&#x9762;&#x7576;&#x4E2D;&#x90FD;&#x6709;getParent()&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x53D6;&#x5F97;&#x7236;&#x6A19;&#x7C64;&#xFF0C;&#x53EA;&#x662F;Tag&#x4ECB;&#x9762;&#x7684;getParent()&#x65B9;&#x6CD5;&#x662F;&#x56DE;&#x50B3;Tag&#xFF0C;SimpleTag&#x4ECB;&#x9762;&#x7684;&#x5247;&#x662F;&#x56DE;&#x50B3;JspTag&#xFF0C;&#x6B64;&#x984C;&#x7684;&#x5B50;&#x6A19;&#x7C64;&#x7E7C;&#x627F;SimpleTagSupport&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4F7F;&#x7528;SimpleTag&#x4ECB;&#x9762;&#x7684;getParent()&#x65B9;&#x6CD5;&#x4E26;&#x8F49;&#x578B;&#x6210;ShoppingListTag&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SimpleTagSupport&#x985E;&#x5225;&#x7684;findAncestorWithClass()&#x4F86;&#x53D6;&#x5F97;&#x4EFB;&#x610F;&#x7956;&#x5148;&#x6A19;&#x7C64;(TagSupport&#x4E5F;&#x6709;&#xFF0C;&#x4F46;<strong>PageContext&#x6C92;&#x6709;&#x6B64;&#x65B9;&#x6CD5;</strong>&#xFF0C;&#x56E0;&#x6B64;E&#x932F;&#x8AA4;)&#x3002;&#x6B64;&#x5916;&#x7236;&#x6A19;&#x7C64;&#x4E26;&#x7121;&#x6CD5;&#x76F4;&#x63A5;&#x900F;&#x904E;&#x67D0;&#x500B;&#x65B9;&#x6CD5;&#x53D6;&#x5F97;&#x5B50;&#x6A19;&#x7C64;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x62FF;&#x5230;&#x5B50;&#x6A19;&#x7C64;&#x7684;&#x8CC7;&#x8A0A;&#xFF0C;&#x9700;&#x8981;&#x7531;&#x5B50;&#x6A19;&#x7C64;&#x9001;&#x7D66;&#x7236;&#x6A19;&#x7C64;</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>Head First Servlets&amp;JSP ch10 &#x958B;&#x767C;&#x81EA;&#x8A02;&#x6A19;&#x7C64;(p.568~574)</p>
-<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch8 &#x81EA;&#x8A02;&#x6A19;&#x7C64;(p.8-21)</p>
+<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch8 &#x81EA;&#x8A02;&#x6A19;&#x7C64;(p.8-21)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>13.Servlet A receives a request that it forwards to servlet B within another web application in the same web container. Servlet A needs to share data with servlet B and that data must not be visible to other servlets in A&apos;s web application. In which object can the data that A shares with B be stored?</p>
 <p>A.   HttpSession </p>
@@ -1384,9 +1388,11 @@
 <p>C.   ServletContext</p>
 <p>D.   HttpServletRequest </p>
 <p>E.   HttpServletResponse</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section13_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section13_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section13_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;D</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x5169;&#x500B;Servlet&#x9593;&#x8981;&#x5171;&#x4EAB;&#x8CC7;&#x6599;&#x4E14;&#x4E0D;&#x80FD;&#x7D66;&#x5176;&#x4ED6;Servlet&#x770B;&#x5230;&#xFF0C;&#x5C07;&#x5176;&#x8A2D;&#x5B9A;&#x6210;HttpServletRequest
-&#x7684;&#x5C6C;&#x6027;&#x5373;&#x53EF;</p>
+&#x7684;&#x5C6C;&#x6027;&#x5373;&#x53EF;
+</p></div></div></div></sec><p></p>
 <hr>
 <p>14.Your web site has many user-customizable features, for example font and color preferences on web pages. Your IT department has already built a subsystem for user preferences using the Java SE platform&apos;s lang.util.prefs package APIs, and you have been ordered to reuse this subsystem in your web application. You need to create an event listener that constructs the preferences factory and stores it in the application scope for later use.  Furthermore, this factory requires that the URL to a database must be declared in the deployment descriptor like this: </p>
 <pre class="language-"><code class="lang-xml">42. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>context-param</span><span class="token punctuation">&gt;</span></span> 
@@ -1440,13 +1446,15 @@
     <span class="token comment" spellcheck="true">// more code here </span>
 <span class="token punctuation">}</span>
 </code></pre>
+<sec data-title="&#x89E3;&#x6790;" data-id="section14_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section14_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section14_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;C</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5728;ServletContext&#x88AB;&#x521D;&#x59CB;&#x5316;&#x6216;&#x662F;&#x5373;&#x5C07;&#x92B7;&#x6BC0;&#x6642;&#x63A5;&#x5230;&#x901A;&#x77E5;&#x4E26;&#x505A;&#x67D0;&#x4E9B;&#x4E8B;&#x60C5;&#xFF0C;&#x9700;&#x64B0;&#x5BEB;&#x5BE6;&#x4F5C;ServletContextListener&#x7684;&#x76E3;&#x807D;&#x5668;&#xFF0C;&#x4E26;override&#x5169;&#x500B;&#x65B9;&#x6CD5;&#xFF1A;contextInitialized(ServletContextEvent event)&#x8207;contextDestroyed(ServletContextEvent event)</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>&#x8B1B;&#x7FA9; ch12(p.215)</p>
 <p>Head First Servlets&amp;JSP ch5 &#x5C6C;&#x6027;&#x8207;&#x5075;&#x807D;&#x5668;(p.166~174)</p>
 <p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch5 Servlet&#x9032;&#x968E;API&#x3001;&#x904E;&#x6FFE;&#x5668;&#x8207;&#x50BE;&#x807D;&#x5668;(p.5-13)</p>
-<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch5 Web&#x5BB9;&#x5668;&#x6A21;&#x578B;(p.5-8)</p>
+<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch5 Web&#x5BB9;&#x5668;&#x6A21;&#x578B;(p.5-8)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>15.A developer wants a web application to be notified when the application is about to be shut down. Which two actions are necessary to accomplish this goal? (Choose two.)</p>
 <p>A.   include a listener directive in a JSP page </p>
@@ -1456,6 +1464,7 @@
 <p>E.   include a class implementing ServletContextListener as part of the web application deployment </p>
 <p>F.   include a class implementing ContextDestroyedListener as part of the web application deployment </p>
 <p>G.  include a class implementing HttpSessionAttributeListener as part of the web application deployment</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section15_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section15_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section15_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;D&#x3001;E</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x984C;&#x76EE;&#x554F;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5728;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;shut down&#x6642;&#x88AB;&#x901A;&#x77E5;&#xFF0C;&#x9700;&#x8981;&#x505A;&#x4EC0;&#x9EBC;&#x4E8B;&#xFF0C;&#x9019;&#x76F8;&#x7576;&#x65BC;ServletContext&#x88AB;&#x92B7;&#x6BC0;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x6709;&#x5BE6;&#x4F5C;ServletContextListener&#x7684;&#x985E;&#x5225;&#xFF0C;&#x4E26;&#x5728;&#x90E8;&#x7F72;&#x63CF;&#x8FF0;&#x6A94;&#x4E2D;&#x8A2D;&#x5B9A;(Servlet 3.0&#x4EE5;&#x5F8C;&#x4E5F;&#x53EF;&#x5728;&#x5BE6;&#x4F5C;&#x985E;&#x5225;&#x4E2D;&#x5229;&#x7528;@WebListener&#x7684;Annotation&#x6A19;&#x8A3B;)</p>
 <pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>listener</span><span class="token punctuation">&gt;</span></span>
@@ -1463,8 +1472,8 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>listener</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6700;&#x5F8C;&#x7DE8;&#x8F2F;&#x6642;&#x9593;&#xFF1A;
-2017-09-03 10:47:12
-</span></footer>
+2017-10-28 21:44:20
+</span></footer></div></div></div></sec>
                                 
                                 </section>
                             
@@ -1507,7 +1516,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"11~15","level":"2.3","depth":1,"next":{"title":"16~20","level":"2.4","depth":1,"path":"16~20.md","ref":"16~20.md","articles":[]},"previous":{"title":"6~10","level":"2.2","depth":1,"path":"6~10.md","ref":"6~10.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11~15.md","mtime":"2017-09-03T02:47:12.337Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-28T13:40:20.258Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"11~15","level":"2.3","depth":1,"next":{"title":"16~20","level":"2.4","depth":1,"path":"16~20.md","ref":"16~20.md","articles":[]},"previous":{"title":"6~10","level":"2.2","depth":1,"path":"6~10.md","ref":"6~10.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11~15.md","mtime":"2017-10-28T13:44:20.802Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-29T04:24:29.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

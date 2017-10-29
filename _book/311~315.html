@@ -1270,9 +1270,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="426~429.md">
+        <li class="chapter " data-level="6.6" data-path="426~430.html">
             
-                <span>
+                <a href="426~430.html">
             
                     
                     426~429
@@ -1336,6 +1336,7 @@ version to be returning by an intermediary such a proxy server.</p>
 <p>B. PUT</p>
 <p>C. POST</p>
 <p>D. DELETE</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section311_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section311_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section311_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x8981;&#x53EF;&#x4EE5;&#x53D6;&#x5230;&#x7DB2;&#x9801;&#x7684;&#x5FEB;&#x53D6;&#x7248;&#x672C;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;GET&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;&#x53D6;&#x5230;&#x5FEB;&#x53D6;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x9664;&#x4E86;&#x6539;&#x7528;POST&#x65B9;&#x6CD5;&#x4EE5;&#x5916;&#xFF0C;&#x91DD;&#x5C0D;&#x56DE;&#x61C9;&#x6A19;&#x982D;&#x505A;&#x4E0B;&#x5217;&#x8A2D;&#x5B9A;&#x6216;&#x662F;&#x5728;&#x7DB2;&#x5740;&#x5217;&#x9644;&#x52A0;&#x6642;&#x9593;&#x6233;&#x8A18;&#x4E5F;&#x53EF;&#x5728;&#x4F7F;&#x7528;GET&#x65B9;&#x6CD5;&#x6642;&#x907F;&#x514D;&#x5FEB;&#x53D6;</p>
 <pre class="language-"><code class="lang-java"><span class="token comment" spellcheck="true">// &#x91DD;&#x5C0D;HTTP 1.1&#x7684;&#x8A2D;&#x5B9A;&#xFF0C;no-store&#x4EE3;&#x8868;&#x6B64;&#x6587;&#x4EF6;&#x4E0D;&#x61C9;&#x88AB;&#x5FEB;&#x53D6;&#xFF0C;&#x4E5F;&#x4E0D;&#x53EF;&#x88AB;&#x5B58;&#x5728;proxy&#x4F3A;&#x670D;&#x5668;&#x4E2D;</span>
@@ -1348,7 +1349,8 @@ res<span class="token punctuation">.</span><span class="token function">setDateH
 </code></pre>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>&#x8B1B;&#x7FA9; ch3(p.55~p.57)</p>
-<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch1 &#x7C21;&#x4ECB;Web&#x61C9;&#x7528;&#x7A0B;&#x5F0F;(p.1-10)</p>
+<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch1 &#x7C21;&#x4ECB;Web&#x61C9;&#x7528;&#x7A0B;&#x5F0F;(p.1-10)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>312.You are working on a JSP that is intended to inform users about critical errors in the system. The JSP code is attempting to access the exception that represents the cause of the problem, but your IDE is telling you that the variable does not exist. What should you do to address this problem?</p>
 <p>A. Add a page directive stating that this page is an error handler</p>
@@ -1356,19 +1358,22 @@ res<span class="token punctuation">.</span><span class="token function">setDateH
 <p>C. Add a <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>useBean</span><span class="token punctuation">&gt;</span></span></code> tag to declare the and access the exception</p>
 <p>D. Perform the error handling in a servlet rather than in the JSP</p>
 <p>E. Edit the page that caused the error to ensure that it specifies this page as its error handler</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section312_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section312_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section312_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x8981;&#x5728;JSP&#x4E2D;&#x4F7F;&#x7528;exception&#x96B1;&#x85CF;&#x8B8A;&#x6578;&#x53D6;&#x5F97;&#x932F;&#x8AA4;&#x76F8;&#x95DC;&#x8CC7;&#x8A0A;&#xFF0C;&#x9700;&#x5728;&#x8A72;&#x9801;&#x9762;&#x5BA3;&#x544A;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%@</span> <span class="token attr-name">page</span> <span class="token attr-name">isErrorPage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span></code></p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>&#x8B1B;&#x7FA9; ch9(p.157~p.158)</p>
 <p>Head First Servlets&amp;JSP ch7 &#x4F7F;&#x7528;JSP(p.315)</p>
 <p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch6 &#x4F7F;&#x7528;JSP(p.6-28)</p>
-<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch8 JSP&#x6280;&#x8853;&#x6A21;&#x578B;(p.8-20~p.8-21)</p>
+<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch8 JSP&#x6280;&#x8853;&#x6A21;&#x578B;(p.8-20~p.8-21)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>313.Which EL expression returns true if no session has been established with current client?</p>
 <p>A. <code>${not(pageContext.session)}</code></p>
 <p>B. <code>${not(requestScope.session)}</code></p>
 <p>C. <code>${requestScope.sessions.this}</code></p>
 <p>D. <code>${sessionScope.empty}</code></p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section313_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section313_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section313_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x6839;&#x64DA;EL&#x898F;&#x683C;&#x66F8;1.18.4 Coerce A to Boolean</p>
 <ul>
@@ -1380,13 +1385,15 @@ exception, return it</li>
 </ul>
 <p>&#x4F7F;&#x7528;<code>${pageContext.session}</code>&#x53EF;&#x4EE5;&#x53D6;&#x5F97;&#x76EE;&#x524D;&#x7684;pageContext&#x5C0D;&#x61C9;&#x7684;HttpSession&#xFF0C;&#x5982;&#x679C;&#x6C92;&#x6709;&#x5247;&#x56DE;&#x50B3;null&#xFF0C;&#x5728;EL&#x4E2D;&#x7684;&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x5F0F;&#x6703;&#x628A;null&#x8996;&#x70BA;false&#xFF0C;<code>${not false}</code>&#x6703;&#x5F97;&#x5230;true</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
-<p>Head First Servlets&amp;JSP ch8 &#x4E0D;&#x542B;Script&#x7684;JSP(p.399)</p>
+<p>Head First Servlets&amp;JSP ch8 &#x4E0D;&#x542B;Script&#x7684;JSP(p.399)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>314.A web application for business expense reporting allows uploading expense receipts. Multiple receipts can be uploaded single step using one HTTP request. The servlet that processes the request has been marked with the @MultipartConfig annotation. Which method should the servlet use to access the uploaded files?</p>
 <p>A. HttpServletRequest.getParts()</p>
 <p>B. HttpServletRequest.getData()</p>
 <p>C. ServletRequest.getParts()</p>
 <p>D. ServletRequest.getAllParts()</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section314_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section314_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section314_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x6839;&#x64DA;API&#xFF0C;HttpServletRequest&#x6709;&#x5169;&#x500B;&#x8DDF;Part&#x7269;&#x4EF6;&#x76F8;&#x95DC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4F86;&#x8655;&#x7406;&#x6A94;&#x6848;&#x4E0A;&#x50B3;</p>
 <table>
@@ -1418,7 +1425,8 @@ exception, return it</li>
 </table>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>&#x8B1B;&#x7FA9; &#x9644;&#x9304;(p.300)</p>
-<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch3 &#x8ACB;&#x6C42;&#x8207;&#x56DE;&#x61C9;(p.3-20~p.3-25)</p>
+<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch3 &#x8ACB;&#x6C42;&#x8207;&#x56DE;&#x61C9;(p.3-20~p.3-25)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>315.To add a servlet to a context that has not been declared either via annotation or via the descriptor, during context initialization time the following API can be used (Choose three.)</p>
 <p>A. <code>servletContext.addServlet(&quot;myServletName&quot;, &quot;MyServlet&quot;);</code></p>
@@ -1426,6 +1434,7 @@ exception, return it</li>
 <p>C. <code>servletContext.addServlet(myServlet);</code></p>
 <p>D. <code>servletContext.addServlet(&quot;myServletName&quot;, (<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Class</span> <span class="token attr-name">extends</span> <span class="token attr-name">Servlet</span><span class="token punctuation">&gt;</span></span>)gerClass().getClassLoader().loaderClass(&quot;myServlet&quot;));</code></p>
 <p>E. <code>servletContext.addServlet(&quot;myServletName&quot;, MyServlet);</code></p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section315_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section315_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section315_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A&#x3001;D&#x3001;E</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x6839;&#x64DA;API&#xFF0C;addServlet&#x65B9;&#x6CD5;&#x6709;&#x4E09;&#x7A2E;&#x7248;&#x672C;</p>
 <ol>
@@ -1433,9 +1442,10 @@ exception, return it</li>
 <li><code>addServlet(String servletName, Servlet servlet)</code></li>
 <li><code>addServlet(String servletName, String className)</code> </li>
 </ol>
-<p>A&#x70BA;&#x7B2C;3&#x7A2E;&#xFF0C;D&#x70BA;&#x7B2C;1&#x7A2E;&#xFF0C;E&#x70BA;&#x7B2C;2&#x7A2E; </p>
+<p>A&#x70BA;&#x7B2C;3&#x7A2E;&#xFF0C;D&#x70BA;&#x7B2C;1&#x7A2E;&#xFF0C;E&#x70BA;&#x7B2C;2&#x7A2E;
+</p></div></div></div></sec> <p></p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6700;&#x5F8C;&#x7DE8;&#x8F2F;&#x6642;&#x9593;&#xFF1A;
-2017-10-09 23:43:09
+2017-10-29 11:40:07
 </span></footer>
                                 
                                 </section>
@@ -1479,7 +1489,7 @@ exception, return it</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"311~315","level":"5.3","depth":1,"next":{"title":"316~320","level":"5.4","depth":1,"path":"316~320.md","ref":"316~320.md","articles":[]},"previous":{"title":"306~310","level":"5.2","depth":1,"path":"306~310.md","ref":"306~310.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"311~315.md","mtime":"2017-10-09T15:43:09.438Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-28T13:40:20.258Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"311~315","level":"5.3","depth":1,"next":{"title":"316~320","level":"5.4","depth":1,"path":"316~320.md","ref":"316~320.md","articles":[]},"previous":{"title":"306~310","level":"5.2","depth":1,"path":"306~310.md","ref":"306~310.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"311~315.md","mtime":"2017-10-29T03:40:07.186Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-29T04:24:29.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

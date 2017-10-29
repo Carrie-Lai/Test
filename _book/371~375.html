@@ -1270,9 +1270,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="426~429.md">
+        <li class="chapter " data-level="6.6" data-path="426~430.html">
             
-                <span>
+                <a href="426~430.html">
             
                     
                     426~429
@@ -1338,6 +1338,7 @@
 <p>F.  HttpSessionAttributeListener</p>
 <p>G.  HttpSessionBindingListener</p>
 <p>H.  you cannot add listeners programatically.</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section371_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section371_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section371_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A&#x3001;B&#x3001;C&#x3001;D&#x3001;F</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x901A;&#x5E38;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7A0B;&#x5F0F;&#x4E2D;&#x88AB;&#x52A0;&#x5165;ServletContext&#x7576;&#x4E2D;&#x7684;&#x76E3;&#x807D;&#x5668;&#x5FC5;&#x9808;&#x5BE6;&#x4F5C;&#x81F3;&#x5C11;&#x4E00;&#x500B;&#x4E0B;&#x5217;&#x7684;&#x76E3;&#x807D;&#x5668;&#x4ECB;&#x9762;</p>
 <ol>
@@ -1348,7 +1349,8 @@
 <li>HttpSessionAttributeListener</li>
 </ol>
 <p>&#x76F8;&#x95DC;API&#x53EA;&#x6709;&#x5728;ServletContextListener&#x7684;contexInitialized&#x65B9;&#x6CD5;&#x6216;ServletContainerInitializer&#x7684;onStartup&#x65B9;&#x6CD5;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x662F;&#x5728;ServletContextListener&#x7684;contexInitialized&#x65B9;&#x6CD5;&#x7576;&#x4E2D;&#xFF0C;&#x5247;&#x52A0;&#x5165;&#x5BE6;&#x4F5C;ServletContextListener&#x4ECB;&#x9762;&#x7684;&#x76E3;&#x807D;&#x5668;&#x662F;&#x6C92;&#x610F;&#x7FA9;&#x7684;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x662F;&#x5728;ServletContainerInitializer&#x7684;onStartup&#x65B9;&#x6CD5;&#xFF0C;&#x5247;&#x4E5F;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x5BE6;&#x4F5C;ServletContextListener&#x4ECB;&#x9762;&#x7684;&#x76E3;&#x807D;&#x5668;</p>
-<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;4.4.3 Programmatically adding and configuring Listeners</p>
+<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;4.4.3 Programmatically adding and configuring Listeners
+</p></div></div></div></sec><p></p>
 <hr>
 <p>372.Consider the test.jsp page code shown below:</p>
 <pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%@page</span> <span class="token attr-name">contentType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>plain/text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span>
@@ -1380,9 +1382,11 @@ Hello ${world}!
 <p>C.  <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%@page</span> <span class="token attr-name">contentType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>plain/text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span>Hello null!</code></p>
 <p>D.  (Java servlet code which is a result of the translation of test.jsp file)</p>
 <p>E.  The above code doesn&apos;t compile.</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section372_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section372_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section372_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x6839;&#x64DA;&#x898F;&#x683C;&#x66F8;&#xFF0C;getResource&#x53CA;getResourceAsStream&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x7528;&#x4F86;&#x53D6;&#x5F97;&#x52D5;&#x614B;&#x5167;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x62FF;&#x5B83;&#x5011;&#x53D6;&#x5F97;JSP&#x9801;&#x9762;&#x7684;&#x5167;&#x5BB9;&#xFF0C;&#x5247;&#x6703;&#x53D6;&#x5230;JSP&#x7684;&#x539F;&#x59CB;&#x5167;&#x5BB9;&#x800C;&#x4E0D;&#x662F;&#x8655;&#x7406;&#x904E;&#x5F8C;&#x7684;&#x8F38;&#x51FA;&#x5167;&#x5BB9;&#xFF0C;&#x56E0;&#x6B64;&#x6703;&#x539F;&#x5C01;&#x4E0D;&#x52D5;&#x7684;&#x5370;&#x51FA; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%@page</span> <span class="token attr-name">contentType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>plain/text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span>Hello ${world}!</code></p>
-<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;4.6 Resources</p>
+<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;4.6 Resources
+</p></div></div></div></sec><p></p>
 <hr>
 <p>373.Consider the following Deployment Descriptor code snippet:</p>
 <pre class="language-"><code class="lang-xml">...
@@ -1400,9 +1404,11 @@ Hello ${world}!
 <p>A.  1</p>
 <p>B.  2</p>
 <p>C.  Deployment Descriptor is invalid and the runtime exception will be thrown</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section373_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section373_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section373_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;B</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x6839;&#x64DA;&#x898F;&#x683C;&#x66F8;&#xFF0C;Container&#x9808;&#x70BA;&#x90E8;&#x7F72;&#x63CF;&#x8FF0;&#x6A94;&#x4E2D;&#x5B9A;&#x7FA9;&#x7684;&#x6BCF;&#x500B;&#x904E;&#x6FFE;&#x5668;&#x5275;&#x5EFA;&#x4E00;&#x500B;&#x5BE6;&#x9AD4;&#xFF0C;&#x5982;&#x679C;&#x5C0D;&#x540C;&#x4E00;&#x500B;&#x904E;&#x6FFE;&#x5668;&#x5B9A;&#x7FA9;&#x4E86;&#x5169;&#x6B21;&#xFF0C;&#x5C31;&#x6703;&#x5275;&#x5EFA;&#x76F8;&#x540C;&#x985E;&#x5225;&#x7684;&#x5169;&#x500B;&#x5BE6;&#x9AD4;</p>
-<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;6.2.4  Configuration of Filters in a Web Application</p>
+<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;6.2.4  Configuration of Filters in a Web Application
+</p></div></div></div></sec><p></p>
 <hr>
 <p>374.Consider the following Deployment Descriptor code snippet:</p>
 <pre class="language-"><code class="lang-xml">...
@@ -1420,8 +1426,10 @@ Hello ${world}!
 <p>A.  1</p>
 <p>B.  2</p>
 <p>C.  Deployment Descriptor is invalid and the runtime exception will be thrown</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section374_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section374_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section374_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;C</p>
-<p>&#x5099;&#x8A3B;&#xFF1A;&#x5169;&#x500B;&#x904E;&#x6FFE;&#x5668;&#x5B9A;&#x7FA9;&#x7684;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-name</span><span class="token punctuation">&gt;</span></span></code>&#x91CD;&#x8907;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x8A2D;&#x5B9A;</p>
+<p>&#x5099;&#x8A3B;&#xFF1A;&#x5169;&#x500B;&#x904E;&#x6FFE;&#x5668;&#x5B9A;&#x7FA9;&#x7684;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-name</span><span class="token punctuation">&gt;</span></span></code>&#x91CD;&#x8907;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x8A2D;&#x5B9A;
+</p></div></div></div></sec><p></p>
 <hr>
 <p>375.Consider the following Deployment Descriptor code snippet:</p>
 <pre class="language-"><code class="lang-xml">...
@@ -1439,10 +1447,12 @@ Hello ${world}!
 <p>A.  1</p>
 <p>B.  2</p>
 <p>C.  Deployment Descriptor is invalid and the runtime exception will be thrown</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section375_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section375_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section375_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;C</p>
-<p>&#x5099;&#x8A3B;&#xFF1A;&#x5169;&#x500B;&#x904E;&#x6FFE;&#x5668;&#x5B9A;&#x7FA9;&#x7684;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-name</span><span class="token punctuation">&gt;</span></span></code>&#x91CD;&#x8907;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x8A2D;&#x5B9A; </p>
+<p>&#x5099;&#x8A3B;&#xFF1A;&#x5169;&#x500B;&#x904E;&#x6FFE;&#x5668;&#x5B9A;&#x7FA9;&#x7684;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-name</span><span class="token punctuation">&gt;</span></span></code>&#x91CD;&#x8907;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x8A2D;&#x5B9A;
+</p></div></div></div></sec> <p></p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6700;&#x5F8C;&#x7DE8;&#x8F2F;&#x6642;&#x9593;&#xFF1A;
-2017-10-21 23:32:47
+2017-10-29 11:55:28
 </span></footer>
                                 
                                 </section>
@@ -1486,7 +1496,7 @@ Hello ${world}!
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"371~375","level":"5.15","depth":1,"next":{"title":"376~380","level":"5.16","depth":1,"path":"376~380.md","ref":"376~380.md","articles":[]},"previous":{"title":"366~370","level":"5.14","depth":1,"path":"366~370.md","ref":"366~370.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"371~375.md","mtime":"2017-10-21T15:32:47.561Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-28T13:40:20.258Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"371~375","level":"5.15","depth":1,"next":{"title":"376~380","level":"5.16","depth":1,"path":"376~380.md","ref":"376~380.md","articles":[]},"previous":{"title":"366~370","level":"5.14","depth":1,"path":"366~370.md","ref":"366~370.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"371~375.md","mtime":"2017-10-29T03:55:28.956Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-29T04:24:29.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

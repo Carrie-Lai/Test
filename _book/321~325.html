@@ -1270,9 +1270,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="426~429.md">
+        <li class="chapter " data-level="6.6" data-path="426~430.html">
             
-                <span>
+                <a href="426~430.html">
             
                     
                     426~429
@@ -1348,6 +1348,7 @@
 <span class="token annotation punctuation">@DeclareRole</span><span class="token punctuation">(</span><span class="token string">&quot;EMPLOYEE&quot;</span><span class="token punctuation">)</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyServlet</span> <span class="token keyword">extends</span> <span class="token class-name">HttpServlet</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 </code></pre>
+<sec data-title="&#x89E3;&#x6790;" data-id="section321_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section321_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section321_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;@DeclareRoles&#x7528;&#x4F86;&#x5B9A;&#x7FA9;&#x88AB;&#x5176;&#x6A19;&#x8A3B;&#x7684;&#x985E;&#x5225;&#x6703;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x89D2;&#x8272;&#x540D;&#x7A31;</p>
 <pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@DeclareRoles</span><span class="token punctuation">(</span><span class="token string">&quot;BusinessAdmin&quot;</span><span class="token punctuation">)</span>
@@ -1366,7 +1367,8 @@
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p><a href="http://www.informit.com/articles/article.aspx?p=1334089&amp;seqNum=2" target="_blank">Using Security Annotations | Securing Servlets and JSPs in Sun Java System Application Server, Part 2 | InformIT</a></p>
 <p><a href="https://www.ibm.com/support/knowledgecenter/zh-tw/SSHR6W/com.ibm.websphere.wdt.doc/topics/csecuringejee.htm" target="_blank">IBM Knowledge Center</a></p>
-<p>Servlet 3.0&#x898F;&#x683C;&#x66F8;15.5 Annotations and Resource Injection</p>
+<p>Servlet 3.0&#x898F;&#x683C;&#x66F8;15.5 Annotations and Resource Injection
+</p></div></div></div></sec><p></p>
 <hr>
 <p>322.Given the java code snippet in contextInitialized method of a ServletContextListner:</p>
 <pre class="language-"><code class="lang-java">ServletRegistration<span class="token punctuation">.</span>Dynamic sr <span class="token operator">=</span> <span class="token punctuation">(</span>ServletRegistration<span class="token punctuation">.</span>Dynamic<span class="token punctuation">)</span>sc<span class="token punctuation">.</span><span class="token function">addServlet</span><span class="token punctuation">(</span><span class="token string">&quot;myServlet&quot;</span><span class="token punctuation">,</span> myServletClass<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1380,19 +1382,24 @@ sr<span class="token punctuation">.</span><span class="token function">addMappin
 <p>C. Both &quot;/abc&quot; and &quot;/def&quot; are mapped to &quot;myservlet&quot;. The servletSecurityElement applies to &quot;/def&quot;.</p>
 <p>D. Both &quot;/abc&quot; and &quot;/def&quot; are mapped to &quot;myservlet&quot;. The servletSecurityElement applies to both &quot;/abc&quot; and &quot;/def&quot;.</p>
 <p>E. Both &quot;/abc&quot; and &quot;/def&quot; are mapped to &quot;myservlet&quot;. The servletSecurityElement applies to &quot;/abc&quot;, but the behavior for &quot;/def&quot; is not specified.</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section322_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section322_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section322_2"><div class="panel-body">
+<p>&#x5F85;&#x88DC;
+</p></div></div></div></sec><p></p>
 <hr>
 <p>323.Which java code snippet checks whether the user is of the role &quot;MANAGER&quot; for a given HttpServletRequest,httpServletRequest?</p>
 <p>A. httpServletRequest.isUserInRole(&quot;MANAGER&quot;);</p>
 <p>B. httpServletRequest.isCallerInRole(&quot;MANAGER&quot;);</p>
 <p>C. httpServletRequest.isPrincipalInRole(&quot;MANAGER&quot;);</p>
 <p>D. httpServletRequest.isAuthnticatedUserInRole(&quot;MANAGER&quot;);</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section323_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section323_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section323_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x8981;&#x5224;&#x65B7;&#x767B;&#x5165;&#x7684;&#x4F7F;&#x7528;&#x8005;&#x662F;&#x5426;&#x70BA;&#x6307;&#x5B9A;&#x89D2;&#x8272;&#xFF0C;&#x5247;&#x8981;&#x4F7F;&#x7528;isUserInRole&#x65B9;&#x6CD5;</p>
 <p>isCallerInRole&#x3001;isPrincipalInRole&#x53CA;isAuthnticatedUserInRole&#x4E0D;&#x662F;HttpServletRequest&#x7684;&#x65B9;&#x6CD5;</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>Head First Servlets&amp;JSP ch12 Web&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x7684;&#x5B89;&#x5168;&#x6027;(p.674~p.675)</p>
 <p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch10 Web&#x5BB9;&#x5668;&#x5B89;&#x5168;&#x7BA1;&#x7406;(p.10-21)</p>
-<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch7 Web&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x5B89;&#x5168;&#x6A5F;&#x5236;(p.7-11)</p>
+<p>&#x731B;&#x864E;&#x51FA;&#x9598;&#x5C0A;&#x7235;&#x7248; ch7 Web&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x5B89;&#x5168;&#x6A5F;&#x5236;(p.7-11)
+</p></div></div></div></sec><p></p>
 <hr>
 <p>324.A web application uses a cookies to track a client as it navigates through the pages that constitutes the
 application. Which code snippet can be used by the web application to reduce the chance of a cross-site
@@ -1401,9 +1408,11 @@ scripting attack by setting some property of the cookie before returning it to t
 <p>B. cookie.setMaxAge(3600)</p>
 <p>C. cookie.setPath(&quot;/&quot;)</p>
 <p>D. cookie.setSecure(true)</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section324_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section324_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section324_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x672C;&#x984C;&#x662F;&#x8981;&#x91DD;&#x5C0D;cookie&#x505A;&#x8A2D;&#x5B9A;&#x4F86;&#x907F;&#x514D;&#x8DE8;&#x7AD9;&#x9EDE;&#x7684;&#x8173;&#x672C;&#x653B;&#x64CA;&#xFF0C;&#x53EF;&#x5C07;&#x5176;&#x8A2D;&#x5B9A;&#x70BA;HttpOnly cookie&#x3002;&#x6839;&#x64DA;Servlet&#x898F;&#x683C;&#x66F8;&#x2500;HttpOnly cookies indicate to the client that they should not be exposed to client-side scripting code (It&apos;s not filtered out unless the client knows to look for this attribute). The use of HttpOnly cookies helps mitigate certain kinds of cross-site scripting attacks.</p>
-<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;3.7 Cookies</p>
+<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;Servlet 3.0&#x898F;&#x683C;&#x66F8;3.7 Cookies
+</p></div></div></div></sec><p></p>
 <hr>
 <p>325.Given a web fragment jar file, where should we put the web-fragment.xml inside the jar file?</p>
 <p>A. WEB-INF</p>
@@ -1411,13 +1420,15 @@ scripting attack by setting some property of the cookie before returning it to t
 <p>C. WEB-INF/lib</p>
 <p>D. WEB-INF/classes</p>
 <p>E. META-INF/services</p>
+<sec data-title="&#x89E3;&#x6790;" data-id="section325_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section325_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section325_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;B</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x672C;&#x984C;&#x662F;&#x554F;web-fragment.xml&#x8981;&#x653E;&#x5728;jar&#x6A94;&#x7576;&#x4E2D;&#x7684;&#x54EA;&#x500B;&#x4F4D;&#x7F6E;&#xFF0C;&#x56E0;&#x6B64;&#x8981;&#x9078;&#x64C7;META-INF</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
 <p>&#x8B1B;&#x7FA9;(p.301)</p>
-<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch2 &#x64B0;&#x5BEB;&#x8207;&#x8A2D;&#x5B9A;Servlet(p.2-23)</p>
+<p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch2 &#x64B0;&#x5BEB;&#x8207;&#x8A2D;&#x5B9A;Servlet(p.2-23)
+</p></div></div></div></sec><p></p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6700;&#x5F8C;&#x7DE8;&#x8F2F;&#x6642;&#x9593;&#xFF1A;
-2017-10-10 22:35:23
+2017-10-29 11:42:50
 </span></footer>
                                 
                                 </section>
@@ -1461,7 +1472,7 @@ scripting attack by setting some property of the cookie before returning it to t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"321~325","level":"5.5","depth":1,"next":{"title":"326~330","level":"5.6","depth":1,"path":"326~330.md","ref":"326~330.md","articles":[]},"previous":{"title":"316~320","level":"5.4","depth":1,"path":"316~320.md","ref":"316~320.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"321~325.md","mtime":"2017-10-10T14:35:23.770Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-28T13:40:20.258Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"321~325","level":"5.5","depth":1,"next":{"title":"326~330","level":"5.6","depth":1,"path":"326~330.md","ref":"326~330.md","articles":[]},"previous":{"title":"316~320","level":"5.4","depth":1,"path":"316~320.md","ref":"316~320.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"ahjiong"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"321~325.md","mtime":"2017-10-29T03:42:50.802Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-29T04:24:29.324Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
