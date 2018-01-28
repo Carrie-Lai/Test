@@ -9,7 +9,7 @@
         "sectionx",
         "todo",
         "disqus",
-        "github-buttons"
+        "github"
      ],
     "pluginsConfig": {
     	"tbfed-pagefooter": {
@@ -24,10 +24,8 @@
         "disqus": {
             "shortName": "test-n76okrptvh"
         },
-        "github-buttons": {
-            "repo": "Carrie-Lai/Test",
-            "type": "star",
-            "size": "small"
+        "github": {
+            "url": "https://github.com/Carrie-Lai/Test"
         }
 	}
 }
