@@ -1383,7 +1383,11 @@ sr<span class="token punctuation">.</span><span class="token function">addMappin
 <p>D. Both &quot;/abc&quot; and &quot;/def&quot; are mapped to &quot;myservlet&quot;. The servletSecurityElement applies to both &quot;/abc&quot; and &quot;/def&quot;.</p>
 <p>E. Both &quot;/abc&quot; and &quot;/def&quot; are mapped to &quot;myservlet&quot;. The servletSecurityElement applies to &quot;/abc&quot;, but the behavior for &quot;/def&quot; is not specified.</p>
 <sec data-title="&#x89E3;&#x6790;" data-id="section322_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section322_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section322_2"><div class="panel-body">
-<p>&#x5F85;&#x88DC;
+<p>&#x7B54;&#x6848;&#xFF1A;D</p>
+<p>&#x5099;&#x8A3B;&#xFF1A;&#x6839;&#x64DA;API&#x5C0D;&#x65BC;ServletRegistration.Dynamic&#x7684;setServletSecurity&#x65B9;&#x6CD5;&#x7684;&#x8AAA;&#x660E;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x9069;&#x7528;&#x65BC;&#x6240;&#x6709;&#x52A0;&#x5230;&#x6B64;ServletRegistration&#x7684;mapping&#xFF0C;&#x76F4;&#x5230;ServletContext&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6210;</p>
+<p>(Sets the ServletSecurityElement to be applied to the mappings defined for this ServletRegistration.</p>
+<p>This method applies to all mappings added to this ServletRegistration up until the point that the ServletContext from which it was obtained has been initialized.)</p>
+<p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;API
 </p></div></div></div></sec><p></p>
 <hr>
 <p>323.Which java code snippet checks whether the user is of the role &quot;MANAGER&quot; for a given HttpServletRequest,httpServletRequest?</p>
@@ -1428,7 +1432,7 @@ scripting attack by setting some property of the cookie before returning it to t
 <p>Servlet&amp;JSP&#x6559;&#x5B78;&#x624B;&#x518A; ch2 &#x64B0;&#x5BEB;&#x8207;&#x8A2D;&#x5B9A;Servlet(p.2-23)
 </p></div></div></div></sec><p></p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6700;&#x5F8C;&#x7DE8;&#x8F2F;&#x6642;&#x9593;&#xFF1A;
-2017-11-02 07:30:08
+2017-12-25 00:10:22
 </span></footer>
                                 
                                 </section>
@@ -1472,7 +1476,7 @@ scripting attack by setting some property of the cookie before returning it to t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"321~325","level":"5.5","depth":1,"next":{"title":"326~330","level":"5.6","depth":1,"path":"326~330.md","ref":"326~330.md","articles":[]},"previous":{"title":"316~320","level":"5.4","depth":1,"path":"316~320.md","ref":"316~320.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"321~325.md","mtime":"2017-11-01T23:30:08.169Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-13T23:26:15.271Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"321~325","level":"5.5","depth":1,"next":{"title":"326~330","level":"5.6","depth":1,"path":"326~330.md","ref":"326~330.md","articles":[]},"previous":{"title":"316~320","level":"5.4","depth":1,"path":"316~320.md","ref":"316~320.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"321~325.md","mtime":"2017-12-24T16:10:22.734Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1499,10 +1503,6 @@ scripting attack by setting some property of the cookie before returning it to t
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
