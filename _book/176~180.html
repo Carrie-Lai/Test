@@ -77,6 +77,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,6 +91,17 @@
     
     <link rel="prev" href="171~175.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Carrie-Lai/Test","type":"star","size":"small"};
+    </script>
 
     </head>
     <body>
@@ -1334,24 +1346,24 @@
 <p><img src="media/13296.jpeg" alt="1505779446052"></p>
 <p>A.   <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">forum:</span>message</span> <span class="token attr-name">from</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>My Name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">subject</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>My Subject<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code></p>
 <p>B.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">forum:</span>message</span> <span class="token attr-name">subject</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>My Subject<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-    My message body.
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">forum:</span>message</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>forum<span class="token operator">:</span>message subject<span class="token operator">=</span><span class="token string">&quot;My Subject&quot;</span><span class="token operator">&gt;</span> 
+    My message body<span class="token punctuation">.</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>forum<span class="token operator">:</span>message<span class="token operator">&gt;</span>
 </code></pre>
 <p>C.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">forum:</span>message</span> <span class="token attr-name">from</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>My Name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">subject</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${param.subject}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-    ${param.body} 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">forum:</span>message</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>forum<span class="token operator">:</span>message from<span class="token operator">=</span><span class="token string">&quot;My Name&quot;</span> subject<span class="token operator">=</span><span class="token string">&quot;${param.subject}&quot;</span><span class="token operator">&gt;</span> 
+    $<span class="token punctuation">{</span>param<span class="token punctuation">.</span>body<span class="token punctuation">}</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>forum<span class="token operator">:</span>message<span class="token operator">&gt;</span>
 </code></pre>
 <p>D.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">forum:</span>message</span> <span class="token attr-name">from</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>My Name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">subject</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>My Subject<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-    &lt;%= request.getParameter( &quot;body&quot; ) %&gt; 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">forum:</span>message</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>forum<span class="token operator">:</span>message from<span class="token operator">=</span><span class="token string">&quot;My Name&quot;</span> subject<span class="token operator">=</span><span class="token string">&quot;My Subject&quot;</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span><span class="token operator">%=</span> request<span class="token punctuation">.</span><span class="token function">getParameter</span><span class="token punctuation">(</span> <span class="token string">&quot;body&quot;</span> <span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>forum<span class="token operator">:</span>message<span class="token operator">&gt;</span>
 </code></pre>
 <p>E.   </p>
-<pre class="language-"><code class="lang-jsp">&lt;forum:message from=&quot;My Name&quot; subject=&quot;&lt;%= request.getParameter( &quot;subject&quot; ) %&gt;&quot;&gt; 
-    My message body. 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">forum:</span>message</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>forum<span class="token operator">:</span>message from<span class="token operator">=</span><span class="token string">&quot;My Name&quot;</span> subject<span class="token operator">=</span><span class="token string">&quot;&lt;%= request.getParameter( &quot;</span>subject<span class="token string">&quot; ) %&gt;&quot;</span><span class="token operator">&gt;</span> 
+    My message body<span class="token punctuation">.</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>forum<span class="token operator">:</span>message<span class="token operator">&gt;</span>
 </code></pre>
 <sec data-title="&#x89E3;&#x6790;" data-id="section176_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section176_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section176_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;D</p>
@@ -1385,8 +1397,8 @@
 <hr>
 <p>178.Click the Exhibit button. </p>
 <p>Assume the tag library in the exhibit is placed in a web application in the path /WEB-INF/tld/example.tld. </p>
-<pre class="language-"><code class="lang-jsp">1. 
-2. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">ex:</span>hello</span> <span class="token punctuation">/&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token number">1</span><span class="token punctuation">.</span> 
+<span class="token number">2</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>ex<span class="token operator">:</span>hello <span class="token operator">/</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>Which JSP code, inserted at line 1, completes the JSP code to invoke the hello tag?</p>
 <p><img src="media/28340.jpeg" alt="1505779647576"></p>
@@ -1405,34 +1417,34 @@
 <hr>
 <p>179.Which JSTL code snippet produces the output &quot;big number&quot; when X is greater than 42, but outputs &quot;small number&quot; in all other cases?</p>
 <p>A.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>&lt;%<span class="token punctuation">=</span> (X <span class="token punctuation">&gt;</span> 42) %<span class="token punctuation">&gt;</span><span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>then</span><span class="token punctuation">&gt;</span></span>big number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>then</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>else</span><span class="token punctuation">&gt;</span></span>small number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>else</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>if</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span><span class="token keyword">if</span> test<span class="token operator">=</span><span class="token string">&apos;&lt;%= (X &gt; 42) %&gt;&apos;</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span>c<span class="token operator">:</span>then<span class="token operator">&gt;</span>big number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>then<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span>c<span class="token operator">:</span><span class="token keyword">else</span><span class="token operator">&gt;</span>small number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span><span class="token keyword">else</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>B.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>if</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>then</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>&lt;%<span class="token punctuation">=</span> (X <span class="token punctuation">&gt;</span> 42) %<span class="token punctuation">&gt;</span><span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span>big number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>then</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>else</span><span class="token punctuation">&gt;</span></span>small number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>else</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>if</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span>c<span class="token operator">:</span>then test<span class="token operator">=</span><span class="token string">&apos;&lt;%= (X &gt; 42) %&gt;&apos;</span><span class="token operator">&gt;</span>big number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>then<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>c<span class="token operator">:</span><span class="token keyword">else</span><span class="token operator">&gt;</span>small number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span><span class="token keyword">else</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>C.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>choose</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>&lt;%<span class="token punctuation">=</span> (X <span class="token punctuation">&gt;</span> 42) %<span class="token punctuation">&gt;</span><span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>then</span><span class="token punctuation">&gt;</span></span>big number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>when</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>else</span><span class="token punctuation">&gt;</span></span>small number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>otherwise</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>choose</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span>choose test<span class="token operator">=</span><span class="token string">&apos;&lt;%= (X &gt; 42) %&gt;&apos;</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span>c<span class="token operator">:</span>then<span class="token operator">&gt;</span>big number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>when<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span>c<span class="token operator">:</span><span class="token keyword">else</span><span class="token operator">&gt;</span>small number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>otherwise<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>choose<span class="token operator">&gt;</span>
 </code></pre>
 <p>D.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>choose</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>&lt;%<span class="token punctuation">=</span> (X <span class="token punctuation">&gt;</span> 42) %<span class="token punctuation">&gt;</span><span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>when</span><span class="token punctuation">&gt;</span></span>big number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>when</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>otherwise</span><span class="token punctuation">&gt;</span></span>small number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>otherwise</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>choose</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span>choose test<span class="token operator">=</span><span class="token string">&apos;&lt;%= (X &gt; 42) %&gt;&apos;</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>c<span class="token operator">:</span>when<span class="token operator">&gt;</span>big number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>when<span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>c<span class="token operator">:</span>otherwise<span class="token operator">&gt;</span>small number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>otherwise<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>choose<span class="token operator">&gt;</span>
 </code></pre>
 <p>E.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>choose</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>when</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>&lt;%<span class="token punctuation">=</span> (X <span class="token punctuation">&gt;</span> 42) %<span class="token punctuation">&gt;</span><span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span>big number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>when</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>otherwise</span><span class="token punctuation">&gt;</span></span>small number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>otherwise</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>choose</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span>choose<span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>c<span class="token operator">:</span>when test<span class="token operator">=</span><span class="token string">&apos;&lt;%= (X &gt; 42) %&gt;&apos;</span><span class="token operator">&gt;</span>big number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>when<span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>c<span class="token operator">:</span>otherwise<span class="token operator">&gt;</span>small number<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>otherwise<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>choose<span class="token operator">&gt;</span>
 </code></pre>
 <sec data-title="&#x89E3;&#x6790;" data-id="section179_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section179_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section179_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;E</p>
@@ -1500,7 +1512,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"176~180","level":"3.16","depth":1,"next":{"title":"181~185","level":"3.17","depth":1,"path":"181~185.md","ref":"181~185.md","articles":[]},"previous":{"title":"171~175","level":"3.15","depth":1,"path":"171~175.md","ref":"171~175.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"176~180.md","mtime":"2017-10-29T06:41:21.582Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"176~180","level":"3.16","depth":1,"next":{"title":"181~185","level":"3.17","depth":1,"path":"181~185.md","ref":"181~185.md","articles":[]},"previous":{"title":"171~175","level":"3.15","depth":1,"path":"171~175.md","ref":"171~175.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","github-buttons","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"github-buttons":{"repo":"Carrie-Lai/Test","type":"star","size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"176~180.md","mtime":"2017-10-29T06:41:21.582Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:13:24.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1527,6 +1539,14 @@
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

@@ -77,6 +77,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,6 +91,17 @@
     
     <link rel="prev" href="221~225.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Carrie-Lai/Test","type":"star","size":"small"};
+    </script>
 
     </head>
     <body>
@@ -1367,12 +1379,12 @@ Object o <span class="token operator">=</span> r<span class="token punctuation">
 </p></div></div></div></sec><p></p>
 <hr>
 <p>227.You are creating a content management system (CMS) with a web application front-end. The JSP that displays a given document in the CMS has the following general structure: </p>
-<pre class="language-"><code class="lang-jsp">1. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%--</span> <span class="token attr-name">tag</span> <span class="token attr-name">declaration</span> <span class="token attr-name">--%</span><span class="token punctuation">&gt;</span></span> 
-2. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">t:</span>document</span><span class="token punctuation">&gt;</span></span>
-... 
-11.  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">t:</span>paragraph</span><span class="token punctuation">&gt;</span></span>... <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">t:</span>citation</span> <span class="token attr-name">docID</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>xyz<span class="token punctuation">&apos;</span></span> <span class="token punctuation">/&gt;</span></span> ...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">t:</span>paragraph</span><span class="token punctuation">&gt;</span></span> 
-... 
-99. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">t:</span>document</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token number">1</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">--</span> tag declaration <span class="token operator">--</span><span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token number">2</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>t<span class="token operator">:</span>document<span class="token operator">&gt;</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token number">11</span><span class="token punctuation">.</span>  <span class="token operator">&lt;</span>t<span class="token operator">:</span>paragraph<span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>t<span class="token operator">:</span>citation docID<span class="token operator">=</span><span class="token string">&apos;xyz&apos;</span> <span class="token operator">/</span><span class="token operator">&gt;</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>&lt;<span class="token operator">/</span>t<span class="token operator">:</span>paragraph<span class="token operator">&gt;</span> 
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token number">99</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">/</span>t<span class="token operator">:</span>document<span class="token operator">&gt;</span>
 </code></pre>
 <p>The citation tag must store information in the document tag  for the document tag to generate a reference section at the end of the generated web page. </p>
 <p>The document tag handler follows the Classic tag model and the citation tag handler follows the Simple tag model. Furthermore, the citation tag could also be embedded in other custom tags that could have either the Classic or Simple tag handler model. </p>
@@ -1427,11 +1439,11 @@ Object o <span class="token operator">=</span> r<span class="token punctuation">
 </p></div></div></div></sec><p></p>
 <hr>
 <p>230.Your web application uses a lot of Java enumerated types in the domain model of the application. Built into each enum type is a method, getDisplay(), which returns a localized, user-oriented string. There are many uses for presenting enums within the web application, so your manager has asked you to create a custom tag that iterates over the set of enum values and processes the body of the tag once for each value; setting the value into a page-scoped attribute called, enumValue. Here is an example of how this tag is used: </p>
-<pre class="language-"><code class="lang-jsp">10. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>season<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-11. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">t:</span>everyEnum</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>com.example.Season<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-12.    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>${enumValue}<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span>${enumValue.display}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> 
-13. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">t:</span>everyEnum</span><span class="token punctuation">&gt;</span></span> 
-14. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token number">10</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>select name<span class="token operator">=</span><span class="token string">&apos;season&apos;</span><span class="token operator">&gt;</span> 
+<span class="token number">11</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>t<span class="token operator">:</span>everyEnum type<span class="token operator">=</span><span class="token string">&apos;com.example.Season&apos;</span><span class="token operator">&gt;</span> 
+<span class="token number">12</span><span class="token punctuation">.</span>    <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token string">&apos;${enumValue}&apos;</span><span class="token operator">&gt;</span>$<span class="token punctuation">{</span>enumValue<span class="token punctuation">.</span>display<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">&gt;</span> 
+<span class="token number">13</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">/</span>t<span class="token operator">:</span>everyEnum<span class="token operator">&gt;</span> 
+<span class="token number">14</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">/</span>select<span class="token operator">&gt;</span>
 </code></pre>
 <p>You have decided to use the Simple tag model to create this tag handler. </p>
 <p>Which tag handler method will accomplish this goal?</p>
@@ -1535,7 +1547,7 @@ Object o <span class="token operator">=</span> r<span class="token punctuation">
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"226~230","level":"4.6","depth":1,"next":{"title":"231~235","level":"4.7","depth":1,"path":"231~235.md","ref":"231~235.md","articles":[]},"previous":{"title":"221~225","level":"4.5","depth":1,"path":"221~225.md","ref":"221~225.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"226~230.md","mtime":"2017-10-31T23:36:25.434Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"226~230","level":"4.6","depth":1,"next":{"title":"231~235","level":"4.7","depth":1,"path":"231~235.md","ref":"231~235.md","articles":[]},"previous":{"title":"221~225","level":"4.5","depth":1,"path":"221~225.md","ref":"221~225.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","github-buttons","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"github-buttons":{"repo":"Carrie-Lai/Test","type":"star","size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"226~230.md","mtime":"2017-10-31T23:36:25.434Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:13:24.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1562,6 +1574,14 @@ Object o <span class="token operator">=</span> r<span class="token punctuation">
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

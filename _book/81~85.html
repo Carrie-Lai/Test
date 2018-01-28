@@ -77,6 +77,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,6 +91,17 @@
     
     <link rel="prev" href="76~80.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Carrie-Lai/Test","type":"star","size":"small"};
+    </script>
 
     </head>
     <body>
@@ -1398,24 +1410,24 @@
 <hr>
 <p>84.You are building JSP pages that have a set of menus that are visible based on a user&apos;s security role. These menus are hand-crafted by your web design team; for example, the SalesManager role has a menu in the file /WEB-INF/html/sales-mgr-menu.html. Which JSP code snippet should be used to make this menu visible to the user?</p>
 <p>A.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">if</span> <span class="token attr-name">(</span> <span class="token attr-name">request.isUserInRole(&quot;SalesManager&quot;)</span> <span class="token attr-name">)</span> <span class="token attr-name">{</span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%@</span> <span class="token attr-name">include</span> <span class="token attr-name">file</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>/WEB-INF/html/sales-mgr-menu.html<span class="token punctuation">&apos;</span></span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span> request<span class="token punctuation">.</span><span class="token function">isUserInRole</span><span class="token punctuation">(</span><span class="token string">&quot;SalesManager&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span><span class="token operator">%</span>@ include file<span class="token operator">=</span><span class="token string">&apos;/WEB-INF/html/sales-mgr-menu.html&apos;</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>B.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>request.isUserInRole(<span class="token punctuation">&quot;</span>SalesManager<span class="token punctuation">&quot;</span>)<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%@</span> <span class="token attr-name">include</span> <span class="token attr-name">file</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>/WEB-INF/html/sales-mgr-menu.html<span class="token punctuation">&apos;</span></span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">jsp:</span>if</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>jsp<span class="token operator">:</span><span class="token keyword">if</span> test<span class="token operator">=</span><span class="token string">&apos;request.isUserInRole(&quot;SalesManager&quot;)&apos;</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span><span class="token operator">%</span>@ include file<span class="token operator">=</span><span class="token string">&apos;/WEB-INF/html/sales-mgr-menu.html&apos;</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>jsp<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>C.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">if</span> <span class="token attr-name">(</span> <span class="token attr-name">request.isUserInRole(&quot;SalesManager&quot;)</span> <span class="token attr-name">)</span> <span class="token attr-name">{</span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>include</span> <span class="token attr-name">file</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>/WEB-INF/html/sales-mgr-menu.html<span class="token punctuation">&apos;</span></span> <span class="token punctuation">/&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span> request<span class="token punctuation">.</span><span class="token function">isUserInRole</span><span class="token punctuation">(</span><span class="token string">&quot;SalesManager&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>jsp<span class="token operator">:</span>include file<span class="token operator">=</span><span class="token string">&apos;/WEB-INF/html/sales-mgr-menu.html&apos;</span> <span class="token operator">/</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>D.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>request.isUserInRole(<span class="token punctuation">&quot;</span>SalesManager<span class="token punctuation">&quot;</span>)<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>include</span> <span class="token attr-name">file</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>/WEB-INF/html/sales-mgr-menu.html<span class="token punctuation">&apos;</span></span> <span class="token punctuation">/&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">jsp:</span>if</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>jsp<span class="token operator">:</span><span class="token keyword">if</span> test<span class="token operator">=</span><span class="token string">&apos;request.isUserInRole(&quot;SalesManager&quot;)&apos;</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>jsp<span class="token operator">:</span>include file<span class="token operator">=</span><span class="token string">&apos;/WEB-INF/html/sales-mgr-menu.html&apos;</span> <span class="token operator">/</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>jsp<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">&gt;</span>
 </code></pre>
 <sec data-title="&#x89E3;&#x6790;" data-id="section84_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section84_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section84_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
@@ -1429,39 +1441,39 @@
 <hr>
 <p>85.For debugging purposes, you need to record how many times a given JSP is invoked before the user&apos;s session has been created. The JSP&apos;s destroy method stores this information to a database. Which JSP code snippet keeps track of this count for the lifetime of the JSP page?</p>
 <p>A.   </p>
-<pre class="language-"><code class="lang-jsp">&lt;%! int count = 0; %&gt; 
-&lt;% 
-if ( request.getSession(false) == null ) 
-count++; 
-%&gt;
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">!</span> <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">%</span> 
+<span class="token keyword">if</span> <span class="token punctuation">(</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token punctuation">)</span> 
+count<span class="token operator">++</span><span class="token punctuation">;</span> 
+<span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>B.   </p>
-<pre class="language-"><code class="lang-jsp">&lt;%@ int count = 0; %&gt; 
-&lt;% 
-if ( request.getSession(false) == null ) 
-count++; 
-%&gt;
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span><span class="token operator">%</span>@ <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">%</span> 
+<span class="token keyword">if</span> <span class="token punctuation">(</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token punctuation">)</span> 
+count<span class="token operator">++</span><span class="token punctuation">;</span> 
+<span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>C.   </p>
-<pre class="language-"><code class="lang-jsp">&lt;% 
-int count = 0; 
-if ( request.getSession(false) == null ) 
-count++; 
-%&gt;
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span><span class="token operator">%</span> 
+<span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+<span class="token keyword">if</span> <span class="token punctuation">(</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token punctuation">)</span> 
+count<span class="token operator">++</span><span class="token punctuation">;</span> 
+<span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>D.   </p>
-<pre class="language-"><code class="lang-jsp">&lt;%@ 
-int count = 0; 
-if ( request.getSession(false) == null ) 
-count++; 
-%&gt;
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span><span class="token operator">%</span>@ 
+<span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+<span class="token keyword">if</span> <span class="token punctuation">(</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token punctuation">)</span> 
+count<span class="token operator">++</span><span class="token punctuation">;</span> 
+<span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>E.   </p>
-<pre class="language-"><code class="lang-jsp">&lt;%! 
-int count = 0; 
-if ( request.getSession(false) == null ) 
-count++;
-%&gt;
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">!</span> 
+<span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+<span class="token keyword">if</span> <span class="token punctuation">(</span> request<span class="token punctuation">.</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token punctuation">)</span> 
+count<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <sec data-title="&#x89E3;&#x6790;" data-id="section85_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section85_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section85_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A</p>
@@ -1518,7 +1530,7 @@ count++;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"81~85","level":"2.17","depth":1,"next":{"title":"86~90","level":"2.18","depth":1,"path":"86~90.md","ref":"86~90.md","articles":[]},"previous":{"title":"76~80","level":"2.16","depth":1,"path":"76~80.md","ref":"76~80.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"81~85.md","mtime":"2017-11-19T03:25:56.316Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"81~85","level":"2.17","depth":1,"next":{"title":"86~90","level":"2.18","depth":1,"path":"86~90.md","ref":"86~90.md","articles":[]},"previous":{"title":"76~80","level":"2.16","depth":1,"path":"76~80.md","ref":"76~80.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","github-buttons","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"github-buttons":{"repo":"Carrie-Lai/Test","type":"star","size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"81~85.md","mtime":"2017-11-19T03:25:56.316Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:13:24.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1545,6 +1557,14 @@ count++;
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

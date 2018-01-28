@@ -77,6 +77,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,6 +91,17 @@
     
     <link rel="prev" href="356~360.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Carrie-Lai/Test","type":"star","size":"small"};
+    </script>
 
     </head>
     <body>
@@ -1484,13 +1496,13 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>// enter.jsp </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span> 
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>MyServlet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>post<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/MyServlet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Submit form <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span> 
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>html<span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span>body<span class="token operator">&gt;</span> 
+        <span class="token operator">&lt;</span>form action<span class="token operator">=</span><span class="token string">&quot;MyServlet&quot;</span> method<span class="token operator">=</span><span class="token string">&quot;post&quot;</span><span class="token operator">&gt;</span> 
+            <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">&quot;/MyServlet&quot;</span><span class="token operator">&gt;</span>Submit form <span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span> 
+        <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
 </code></pre>
 <p>Which method will be called when a user clicks Submit form in enter.jsp?</p>
 <p>A. doPost</p>
@@ -1596,7 +1608,7 @@ and annotations
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"361~365","level":"5.13","depth":1,"next":{"title":"366~370","level":"5.14","depth":1,"path":"366~370.md","ref":"366~370.md","articles":[]},"previous":{"title":"356~360","level":"5.12","depth":1,"path":"356~360.md","ref":"356~360.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"361~365.md","mtime":"2017-10-29T03:53:19.854Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"361~365","level":"5.13","depth":1,"next":{"title":"366~370","level":"5.14","depth":1,"path":"366~370.md","ref":"366~370.md","articles":[]},"previous":{"title":"356~360","level":"5.12","depth":1,"path":"356~360.md","ref":"356~360.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","github-buttons","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"github-buttons":{"repo":"Carrie-Lai/Test","type":"star","size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"361~365.md","mtime":"2017-10-29T03:53:19.854Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:13:24.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1623,6 +1635,14 @@ and annotations
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

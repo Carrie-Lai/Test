@@ -77,6 +77,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,6 +91,17 @@
     
     <link rel="prev" href="341~345.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Carrie-Lai/Test","type":"star","size":"small"};
+    </script>
 
     </head>
     <body>
@@ -1397,23 +1409,23 @@
 <p>Which two output the name of the sample in the response? </p>
 <p>(Choose two Choices) </p>
 <p>A. </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>useBean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sample<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>test.Sample<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span> 
-&lt;%= sample.getName() %&gt;
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>jsp<span class="token operator">:</span>useBean id<span class="token operator">=</span><span class="token string">&quot;sample&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;test.Sample&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">%=</span> sample<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>B. </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>useBean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>test.Sample<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>page<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-    &lt;%= sample.getName() %&gt; 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">jsp:</span>useBean</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>jsp<span class="token operator">:</span>useBean id<span class="token operator">=</span><span class="token string">&quot;test.Sample&quot;</span> scope<span class="token operator">=</span><span class="token string">&quot;page&quot;</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span><span class="token operator">%=</span> sample<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>jsp<span class="token operator">:</span>useBean<span class="token operator">&gt;</span>
 </code></pre>
 <p>C. <code>&lt;%= sample.getName() %&gt;</code></p>
 <p>D. </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>useBean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sample<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>test.Sample<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>page<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span> 
-&lt;%= sample.getName() %&gt;
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>jsp<span class="token operator">:</span>useBean id<span class="token operator">=</span><span class="token string">&quot;sample&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;test.Sample&quot;</span> scope<span class="token operator">=</span><span class="token string">&quot;page&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">%=</span> sample<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>E. </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">jsp:</span>useBean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sample<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>test.Sample<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-    &lt;%= sample.getName() %&gt; 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">jsp:</span>useBean</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>jsp<span class="token operator">:</span>useBean id<span class="token operator">=</span><span class="token string">&quot;sample&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;test.Sample&quot;</span><span class="token operator">&gt;</span> 
+    <span class="token operator">&lt;</span><span class="token operator">%=</span> sample<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>jsp<span class="token operator">:</span>useBean<span class="token operator">&gt;</span>
 </code></pre>
 <sec data-title="&#x89E3;&#x6790;" data-id="section349_2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="&#x89E3;&#x6790;">&#x89E3;&#x6790;<a class="pull-right section atTitle btn btn-default" target="section349_2"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section349_2"><div class="panel-body">
 <p>&#x7B54;&#x6848;&#xFF1A;A&#x3001;D</p>
@@ -1433,15 +1445,15 @@
 <p>&#x7B54;&#x6848;&#xFF1A;C</p>
 <p>&#x5099;&#x8A3B;&#xFF1A;&#x9019;&#x984C;&#x8DDF;&#x7B2C;298&#x984C;&#x6709;&#x9EDE;&#x50CF;&#xFF0C;&#x4F46;&#x9019;&#x908A;&#x554F;&#x7684;&#x662F;&#x5728;JSP&#x4E2D;&#x9023;&#x7DDA;&#x8CC7;&#x6599;&#x5EAB;&#x767C;&#x751F;&#x4F8B;&#x5916;&#x932F;&#x8AA4;&#xFF0C;&#x8F03;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;JSTL&#x7684; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>catch</span><span class="token punctuation">&gt;</span></span></code>&#x6A19;&#x7C64;&#x8655;&#x7406;&#x4F8B;&#x5916;&#x932F;&#x8AA4;&#xFF0C;B&#x9078;&#x9805;&#x7684;&#x65B9;&#x5F0F;&#x96D6;&#x7136;&#x4E5F;&#x662F;&#x5408;&#x6CD5;&#xFF0C;&#x4F46;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x5E95;&#x4E0B;&#x4E1F;&#x81EA;&#x8A02;&#x7684;&#x932F;&#x8AA4;&#x9801;&#x9762;&#x7D66;&#x4F7F;&#x7528;&#x8005;&#x770B;&#x4E0D;&#x662F;&#x90A3;&#x9EBC;&#x9069;&#x7576;</p>
 <p>&#x4F7F;&#x7528;&#x7BC4;&#x4F8B;</p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>catch</span> <span class="token attr-name">var</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>myException<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-    Inside the catch...
-    &lt;% int x = 10/0; %&gt;      
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>catch</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${myException !<span class="token punctuation">=</span> null}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-   There was an exception:  ${myException.message} <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>if</span><span class="token punctuation">&gt;</span></span>
-We survived.
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span><span class="token keyword">catch</span> var<span class="token operator">=</span><span class="token string">&quot;myException&quot;</span><span class="token operator">&gt;</span>
+    Inside the <span class="token keyword">catch</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token operator">/</span><span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">%</span><span class="token operator">&gt;</span>      
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span><span class="token keyword">catch</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>c<span class="token operator">:</span><span class="token keyword">if</span> test<span class="token operator">=</span><span class="token string">&quot;${myException != null}&quot;</span><span class="token operator">&gt;</span>
+   There was an exception<span class="token operator">:</span>  $<span class="token punctuation">{</span>myException<span class="token punctuation">.</span>message<span class="token punctuation">}</span> <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">&gt;</span>
+We survived<span class="token punctuation">.</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
 </code></pre>
 <p>&#x4E0A;&#x9762;&#x7684;var=&quot;myException&quot;&#x4EE3;&#x8868;&#x6703;&#x5728;page&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x5EFA;&#x7ACB;&#x540D;&#x70BA;myException&#x7684;&#x5C6C;&#x6027;&#xFF0C;&#x4E26;&#x5C07;&#x4F8B;&#x5916;&#x932F;&#x8AA4;&#x7684;&#x7269;&#x4EF6;&#x6307;&#x5B9A;&#x7D66;&#x5B83;&#xFF0C;&#x5E95;&#x4E0B;&#x4FBF;&#x53EF;&#x5229;&#x7528;<code>${myException.message}</code>&#x5C07;&#x932F;&#x8AA4;&#x8A0A;&#x606F;&#x53D6;&#x51FA;</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
@@ -1495,7 +1507,7 @@ We survived.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"346~350","level":"5.10","depth":1,"next":{"title":"351~355","level":"5.11","depth":1,"path":"351~355.md","ref":"351~355.md","articles":[]},"previous":{"title":"341~345","level":"5.9","depth":1,"path":"341~345.md","ref":"341~345.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"346~350.md","mtime":"2017-10-29T03:49:40.797Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"346~350","level":"5.10","depth":1,"next":{"title":"351~355","level":"5.11","depth":1,"path":"351~355.md","ref":"351~355.md","articles":[]},"previous":{"title":"341~345","level":"5.9","depth":1,"path":"341~345.md","ref":"341~345.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","github-buttons","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"github-buttons":{"repo":"Carrie-Lai/Test","type":"star","size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"346~350.md","mtime":"2017-10-29T03:49:40.797Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:13:24.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1522,6 +1534,14 @@ We survived.
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

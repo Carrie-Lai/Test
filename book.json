@@ -8,7 +8,8 @@
         "bootstrap-callout",
         "sectionx",
         "todo",
-        "disqus"
+        "disqus",
+        "github-buttons"
      ],
     "pluginsConfig": {
     	"tbfed-pagefooter": {
@@ -22,6 +23,11 @@
         },
         "disqus": {
             "shortName": "test-n76okrptvh"
+        },
+        "github-buttons": {
+            "repo": "Carrie-Lai/Test",
+            "type": "star",
+            "size": "small"
         }
 	}
 }

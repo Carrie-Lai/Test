@@ -77,6 +77,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,6 +91,17 @@
     
     <link rel="prev" href="91~95.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Carrie-Lai/Test","type":"star","size":"small"};
+    </script>
 
     </head>
     <body>
@@ -1336,9 +1348,9 @@ A JSP page needs to add the first entry in results to resultMap, storing the nam
 <p>A.   <code>${resultMap[results[0].name] = results[0].score}</code> </p>
 <p>B.   <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">var</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${resultMap}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${results[0].name}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${results[0].score}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code></p>
 <p>C.   </p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">var</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>resultMap<span class="token punctuation">&quot;</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${results[0].name}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-    ${results[0].value} 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>set</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span>set var<span class="token operator">=</span><span class="token string">&quot;resultMap&quot;</span> property<span class="token operator">=</span><span class="token string">&quot;${results[0].name}&quot;</span><span class="token operator">&gt;</span> 
+    $<span class="token punctuation">{</span>results<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">}</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>set<span class="token operator">&gt;</span>
 </code></pre>
 <p>D.   <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">var</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>resultMap<span class="token punctuation">&quot;</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${results[0].name}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${results[0].score}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code> </p>
 <p>E.   <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${resultMap}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${results[0].name}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${results[0].score}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span></code></p>
@@ -1348,15 +1360,15 @@ A JSP page needs to add the first entry in results to resultMap, storing the nam
 <p>1.var</p>
 <p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">var</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>userLevel<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>session<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aaa<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span></code></p>
 <p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">var</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>userLevel<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aaa<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span></code> (&#x6703;&#x5F9E;&#x5C0F;&#x5230;&#x5927;&#x5C0B;&#x627E;&#x5C6C;&#x6027;&#x540D;&#x7A31;&#xFF0C;&#x6709;&#x627E;&#x5230;&#x5247;&#x5728;&#x8A72;&#x7BC4;&#x570D;&#x8A2D;&#x5B9A;&#x5C6C;&#x6027;&#xFF0C;&#x5982;&#x6C92;&#x627E;&#x5230;&#x5247;&#x9810;&#x8A2D;&#x5728;page&#x65B0;&#x589E;)</p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">var</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>userLevel<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>session<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-    aaa, bbb, ccc
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>set</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span>set var<span class="token operator">=</span><span class="token string">&quot;userLevel&quot;</span> scope<span class="token operator">=</span><span class="token string">&quot;session&quot;</span><span class="token operator">&gt;</span>
+    aaa<span class="token punctuation">,</span> bbb<span class="token punctuation">,</span> ccc
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>set<span class="token operator">&gt;</span>
 </code></pre>
 <p>2.target</p>
 <p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${petMap}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dogNane<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aaa<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span></code></p>
-<pre class="language-"><code class="lang-jsp"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">c:</span>set</span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>${person}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-    ${foo.name}
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">c:</span>set</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token operator">&lt;</span>c<span class="token operator">:</span>set target<span class="token operator">=</span><span class="token string">&quot;${person}&quot;</span> property<span class="token operator">=</span><span class="token string">&quot;name&quot;</span><span class="token operator">&gt;</span>
+    $<span class="token punctuation">{</span>foo<span class="token punctuation">.</span>name<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>c<span class="token operator">:</span>set<span class="token operator">&gt;</span>
 </code></pre>
 <p>&#x672C;&#x984C;&#x662F;&#x8981;&#x8A2D;&#x5B9A;Map&#x7684;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x63A1;&#x7528;target&#x7248;&#x672C;&#xFF0C;property&#x5C6C;&#x6027;&#x8996;&#x70BA;Map&#x7684;key&#xFF0C;value&#x5C6C;&#x6027;&#x5247;&#x662F;key&#x5C0D;&#x61C9;&#x7684;value</p>
 <p>&#x76F8;&#x95DC;&#x8AAA;&#x660E;&#xFF1A;</p>
@@ -1369,9 +1381,9 @@ A JSP page needs to add the first entry in results to resultMap, storing the nam
 <p>97.&#x8207;&#x7B2C;30&#x984C;&#x76F8;&#x540C;&#xFF0C;&#x7701;&#x7565;</p>
 <hr>
 <p>98.A web application contains a tag file called beta.tag in /WEB-INF/tags/alpha. A JSP page called sort.jsp exists in the web application and contains only this JSP code: </p>
-<pre class="language-"><code class="lang-jsp">1. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%@</span> <span class="token attr-name">taglib</span> <span class="token attr-name">prefix</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>x<span class="token punctuation">&quot;</span></span> 
-<span class="token attr-name">2.</span>            <span class="token attr-name">tagdir</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/WEB-INF/tags/alpha<span class="token punctuation">&quot;</span></span> <span class="token attr-name">%</span><span class="token punctuation">&gt;</span></span> 
-3. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">x:</span>beta</span> <span class="token punctuation">/&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token number">1</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">%</span>@ taglib prefix<span class="token operator">=</span><span class="token string">&quot;x&quot;</span> 
+<span class="token number">2</span><span class="token punctuation">.</span>            tagdir<span class="token operator">=</span><span class="token string">&quot;/WEB-INF/tags/alpha&quot;</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token number">3</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>x<span class="token operator">:</span>beta <span class="token operator">/</span><span class="token operator">&gt;</span>
 </code></pre>
 <p>The sort.jsp page is requested. </p>
 <p>Which two are true? (Choose two.)</p>
@@ -1495,7 +1507,7 @@ attributes will be preserved. (B&#x932F;&#x8AA4;)</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"96~100","level":"2.20","depth":1,"next":{"title":"101~105","level":"3.1","depth":1,"path":"101~105.md","ref":"101~105.md","articles":[]},"previous":{"title":"91~95","level":"2.19","depth":1,"path":"91~95.md","ref":"91~95.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"96~100.md","mtime":"2017-10-29T04:21:16.120Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"96~100","level":"2.20","depth":1,"next":{"title":"101~105","level":"3.1","depth":1,"path":"101~105.md","ref":"101~105.md","articles":[]},"previous":{"title":"91~95","level":"2.19","depth":1,"path":"91~95.md","ref":"91~95.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","github-buttons","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"github-buttons":{"repo":"Carrie-Lai/Test","type":"star","size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"96~100.md","mtime":"2017-10-29T04:21:16.120Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:13:24.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1522,6 +1534,14 @@ attributes will be preserved. (B&#x932F;&#x8AA4;)</p>
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

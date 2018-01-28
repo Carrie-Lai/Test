@@ -77,6 +77,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,6 +91,17 @@
     
     <link rel="prev" href="111~115.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Carrie-Lai/Test","type":"star","size":"small"};
+    </script>
 
     </head>
     <body>
@@ -1366,13 +1378,13 @@
 </p></div></div></div></sec><p></p>
 <hr>
 <p>117.Given a JSP page: </p>
-<pre class="language-"><code class="lang-jsp">11. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">n:</span>recurse</span><span class="token punctuation">&gt;</span></span> 
-12.   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">n:</span>recurse</span><span class="token punctuation">&gt;</span></span> 
-13.     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">n:</span>recurse</span><span class="token punctuation">&gt;</span></span> 
-14.       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">n:</span>recurse</span> <span class="token punctuation">/&gt;</span></span> 
-15.     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">n:</span>recurse</span><span class="token punctuation">&gt;</span></span> 
-16.   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">n:</span>recurse</span><span class="token punctuation">&gt;</span></span> 
-17. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">n:</span>recurse</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token number">11</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>n<span class="token operator">:</span>recurse<span class="token operator">&gt;</span> 
+<span class="token number">12</span><span class="token punctuation">.</span>   <span class="token operator">&lt;</span>n<span class="token operator">:</span>recurse<span class="token operator">&gt;</span> 
+<span class="token number">13</span><span class="token punctuation">.</span>     <span class="token operator">&lt;</span>n<span class="token operator">:</span>recurse<span class="token operator">&gt;</span> 
+<span class="token number">14</span><span class="token punctuation">.</span>       <span class="token operator">&lt;</span>n<span class="token operator">:</span>recurse <span class="token operator">/</span><span class="token operator">&gt;</span> 
+<span class="token number">15</span><span class="token punctuation">.</span>     <span class="token operator">&lt;</span><span class="token operator">/</span>n<span class="token operator">:</span>recurse<span class="token operator">&gt;</span> 
+<span class="token number">16</span><span class="token punctuation">.</span>   <span class="token operator">&lt;</span><span class="token operator">/</span>n<span class="token operator">:</span>recurse<span class="token operator">&gt;</span> 
+<span class="token number">17</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">/</span>n<span class="token operator">:</span>recurse<span class="token operator">&gt;</span>
 </code></pre>
 <p>The tag handler for n:recurse extends SimpleTagSupport. </p>
 <p>Assuming an n:recurse tag can either contain an empty body or another n:recurse tag, which strategy allows the tag handler for n:recurse to output the nesting depth of the deepest n:recurse tag?</p>
@@ -1390,9 +1402,9 @@
 <hr>
 <p>118.Click the Exhibit button. </p>
 <p>The h:highlight tag renders its body, highlighting an arbitrary number of words, each of which is passed as an attribute (word1, word2, ...). For example, a JSP page can invoke the h:highlight tag as follows: </p>
-<pre class="language-"><code class="lang-jsp">11. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">h:</span>highlight</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>yellow<span class="token punctuation">&quot;</span></span> <span class="token attr-name">word1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>high<span class="token punctuation">&quot;</span></span> <span class="token attr-name">word2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>low<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
-12.   high medium low 
-13. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">h:</span>highlight</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token number">11</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>h<span class="token operator">:</span>highlight color<span class="token operator">=</span><span class="token string">&quot;yellow&quot;</span> word1<span class="token operator">=</span><span class="token string">&quot;high&quot;</span> word2<span class="token operator">=</span><span class="token string">&quot;low&quot;</span><span class="token operator">&gt;</span> 
+<span class="token number">12</span><span class="token punctuation">.</span>   high medium low 
+<span class="token number">13</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">/</span>h<span class="token operator">:</span>highlight<span class="token operator">&gt;</span>
 </code></pre>
 <p>Given that HighlightTag extends SimpleTagSupport, which three steps are necessary to implement the tag handler for the highlight tag? (Choose three).</p>
 <p><img src="media/2063.jpeg" alt="1504880976970"></p>
@@ -1472,9 +1484,9 @@ w<span class="token punctuation">.</span><span class="token function">print</spa
 </p></div></div></div></sec><p></p>
 <hr>
 <p>120.Given: </p>
-<pre class="language-"><code class="lang-jsp">6. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">myTag:</span>foo</span> <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>42<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span> 
-7.   &lt;%=&quot;processing&quot; %&gt; 
-8. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">myTag:</span>foo</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-jsp"><span class="token number">6</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span>myTag<span class="token operator">:</span>foo bar<span class="token operator">=</span><span class="token string">&apos;42&apos;</span><span class="token operator">&gt;</span> 
+<span class="token number">7</span><span class="token punctuation">.</span>   <span class="token operator">&lt;</span><span class="token operator">%=</span><span class="token string">&quot;processing&quot;</span> <span class="token operator">%</span><span class="token operator">&gt;</span> 
+<span class="token number">8</span><span class="token punctuation">.</span> <span class="token operator">&lt;</span><span class="token operator">/</span>myTag<span class="token operator">:</span>foo<span class="token operator">&gt;</span>
 </code></pre>
 <p>and a custom tag handler for foo which extends TagSupport. </p>
 <p>Which two are true about the tag handler referenced by foo? (Choose two.)</p>
@@ -1544,7 +1556,7 @@ w<span class="token punctuation">.</span><span class="token function">print</spa
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"116~120","level":"3.4","depth":1,"next":{"title":"121~125","level":"3.5","depth":1,"path":"121~125.md","ref":"121~125.md","articles":[]},"previous":{"title":"111~115","level":"3.3","depth":1,"path":"111~115.md","ref":"111~115.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"116~120.md","mtime":"2017-10-29T06:41:11.588Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T15:44:00.805Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"116~120","level":"3.4","depth":1,"next":{"title":"121~125","level":"3.5","depth":1,"path":"121~125.md","ref":"121~125.md","articles":[]},"previous":{"title":"111~115","level":"3.3","depth":1,"path":"111~115.md","ref":"111~115.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","theme-comscore","tbfed-pagefooter","prism","splitter","bootstrap-callout","sectionx","todo","disqus","github-buttons","livereload"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"最後編輯時間：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"test-n76okrptvh"},"livereload":{},"todo":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"theme-comscore":{},"github-buttons":{"repo":"Carrie-Lai/Test","type":"star","size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"116~120.md","mtime":"2017-10-29T06:41:11.588Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:13:24.924Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1571,6 +1583,14 @@ w<span class="token punctuation">.</span><span class="token function">print</spa
     
         
         <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
